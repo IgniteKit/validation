@@ -1,21 +1,21 @@
 {
-  "name": "rakit/validation",
+  "name": "gdarko/wp-validation",
   "description": "PHP Laravel like standalone validation library",
   "license": "MIT",
   "authors": [
     {
-      "email": "emsifa@gmail.com",
-      "name": "Muhammad Syifa"
+      "email": "dg@darkog.com",
+      "name": "Darko Gjorgjijoski"
     }
   ],
   "autoload": {
     "psr-4": {
-      "Rakit\\Validation\\": "src"
+      "DG\\Validation\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Rakit\\Validation\\Tests\\": ["tests", "tests/Fixtures"]
+      "DG\\Validation\\Tests\\": ["tests", "tests/Fixtures"]
     }
   },
   "require": {

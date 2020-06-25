@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Tests;
+namespace DG\Validation\Tests;
 
-use Rakit\Validation\Rules\Before;
+use DG\Validation\Rules\Before;
 use PHPUnit\Framework\TestCase;
 use DateTime;
 
@@ -10,7 +10,7 @@ class BeforeTest extends TestCase
 {
 
     /**
-     * @var \Rakit\Validation\Rules\Before
+     * @var \DG\Validation\Rules\Before
      */
     protected $validator;
 

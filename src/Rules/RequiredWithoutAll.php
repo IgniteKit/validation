@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Rule;
+use DG\Validation\Rule;
 
 class RequiredWithoutAll extends Required
 {
@@ -44,6 +44,6 @@ class RequiredWithoutAll extends Required
         }
 
         $this->setAttributeAsRequired();
-        return $requiredValidator->check($value, []);
+        return $requiredValidator->check($value, array());
     }
 }

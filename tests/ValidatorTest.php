@@ -1,12 +1,12 @@
 <?php
 
-namespace Rakit\Validation\Tests;
+namespace DG\Validation\Tests;
 
 use DateTime;
 use PHPUnit\Framework\TestCase;
-use Rakit\Validation\Rule;
-use Rakit\Validation\Rules\UploadedFile;
-use Rakit\Validation\Validator;
+use DG\Validation\Rule;
+use DG\Validation\Rules\UploadedFile;
+use DG\Validation\Validator;
 
 class ValidatorTest extends TestCase
 {
@@ -546,7 +546,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @expectedException \Rakit\Validation\RuleNotFoundException
+     * @expectedException \DG\Validation\RuleNotFoundException
      */
     public function testNonExistentValidationRule()
     {
@@ -619,7 +619,7 @@ class ValidatorTest extends TestCase
     }
 
     /**
-     * @expectedException Rakit\Validation\RuleQuashException
+     * @expectedException DG\Validation\RuleQuashException
      */
     public function testInternalValidationRuleCannotBeOverridden()
     {
@@ -813,7 +813,7 @@ class ValidatorTest extends TestCase
 
         $this->assertFalse($validation->passes());
     }
-  
+
     /**
      * Test root asterisk validation.
      *

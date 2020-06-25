@@ -1,13 +1,13 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\Rule;
+use DG\Validation\Helper;
+use DG\Validation\Rule;
 
 class Extension extends Rule
 {
-    
+
     /** @var string */
     protected $message = "The :attribute must be a :allowed_extensions file";
 
@@ -25,7 +25,7 @@ class Extension extends Rule
         $this->params['allowed_extensions'] = $params;
         return $this;
     }
-    
+
     /**
      * Check the $value is valid
      *

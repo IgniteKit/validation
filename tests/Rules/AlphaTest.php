@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Tests;
+namespace DG\Validation\Tests;
 
-use Rakit\Validation\Rules\Alpha;
+use DG\Validation\Rules\Alpha;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 

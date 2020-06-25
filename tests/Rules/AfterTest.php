@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Tests;
+namespace DG\Validation\Tests;
 
-use Rakit\Validation\Rules\After;
+use DG\Validation\Rules\After;
 use PHPUnit\Framework\TestCase;
 use DateTime;
 
@@ -10,7 +10,7 @@ class AfterTest extends TestCase
 {
 
     /**
-     * @var \Rakit\Validation\Rules\After
+     * @var \DG\Validation\Rules\After
      */
     protected $validator;
 

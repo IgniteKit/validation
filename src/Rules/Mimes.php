@@ -1,10 +1,10 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\MimeTypeGuesser;
-use Rakit\Validation\Rule;
+use DG\Validation\Helper;
+use DG\Validation\MimeTypeGuesser;
+use DG\Validation\Rule;
 
 class Mimes extends Rule
 {

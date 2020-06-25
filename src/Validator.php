@@ -1,12 +1,12 @@
 <?php
 
-namespace Rakit\Validation;
+namespace DG\Validation;
 
 class Validator
 {
     use Traits\TranslationsTrait, Traits\MessagesTrait;
 
-    /** @var translations */
+    /** @var $translations */
     protected $translations = [];
 
     /** @var array */
@@ -33,8 +33,9 @@ class Validator
     /**
      * Register or override existing validator
      *
-     * @param mixed $key
-     * @param Rakit\Validation\Rule $rule
+     * @param  mixed  $key
+     * @param  Rule  $rule
+     *
      * @return void
      */
     public function setValidator(string $key, Rule $rule)
@@ -170,9 +171,11 @@ class Validator
     /**
      * Given $ruleName and $rule to add new validator
      *
-     * @param string $ruleName
-     * @param Rakit\Validation\Rule $rule
+     * @param  string  $ruleName
+     * @param  Rule  $rule
+     *
      * @return void
+     * @throws RuleQuashException
      */
     public function addValidator(string $ruleName, Rule $rule)
     {
@@ -188,7 +191,8 @@ class Validator
     /**
      * Set rule can allow to be overrided
      *
-     * @param boolean $status
+     * @param  bool  $status
+     *
      * @return void
      */
     public function allowRuleOverride(bool $status = false)
@@ -199,7 +203,8 @@ class Validator
     /**
      * Set this can use humanize keys
      *
-     * @param boolean $useHumanizedKeys
+     * @param  bool  $useHumanizedKeys
+     *
      * @return void
      */
     public function setUseHumanizedKeys(bool $useHumanizedKeys = true)
@@ -210,7 +215,7 @@ class Validator
     /**
      * Get $this->useHumanizedKeys value
      *
-     * @return void
+     * @return bool
      */
     public function isUsingHumanizedKey(): bool
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation;
+namespace DG\Validation;
 
 class ErrorBag
 {
@@ -22,9 +22,10 @@ class ErrorBag
     /**
      * Add message for given key and rule
      *
-     * @param string $key
-     * @param string $rule
-     * @param string $message
+     * @param  string  $key
+     * @param  string  $rule
+     * @param  string  $message
+     *
      * @return void
      */
     public function add(string $key, string $rule, string $message)
@@ -49,7 +50,8 @@ class ErrorBag
     /**
      * Check given key is existed
      *
-     * @param string $key
+     * @param  string  $key
+     *
      * @return bool
      */
     public function has(string $key): bool
@@ -72,7 +74,8 @@ class ErrorBag
     /**
      * Get the first value of array
      *
-     * @param string $key
+     * @param  string  $key
+     *
      * @return mixed
      */
     public function first(string $key)
@@ -100,8 +103,9 @@ class ErrorBag
     /**
      * Get messages from given key, can be use custom format
      *
-     * @param string $key
-     * @param string $format
+     * @param  string  $key
+     * @param  string  $format
+     *
      * @return array
      */
     public function get(string $key, string $format = ':message'): array
@@ -131,7 +135,8 @@ class ErrorBag
     /**
      * Get all messages
      *
-     * @param string $format
+     * @param  string  $format
+     *
      * @return array
      */
     public function all(string $format = ':message'): array
@@ -149,8 +154,9 @@ class ErrorBag
     /**
      * Get the first message from existing keys
      *
-     * @param string $format
-     * @param boolean $dotNotation
+     * @param  string  $format
+     * @param  bool  $dotNotation
+     *
      * @return array
      */
     public function firstOfAll(string $format = ':message', bool $dotNotation = false): array
@@ -180,7 +186,8 @@ class ErrorBag
     /**
      * Parse $key to get the array of $key and $ruleName
      *
-     * @param string $key
+     * @param  string  $key
+     *
      * @return array
      */
     protected function parseKey(string $key): array
@@ -205,8 +212,9 @@ class ErrorBag
     /**
      * Filter messages with wildcard key
      *
-     * @param string $key
-     * @param mixed  $ruleName
+     * @param  string  $key
+     * @param  mixed  $ruleName
+     *
      * @return array
      */
     protected function filterMessagesForWildcardKey(string $key, $ruleName = null): array
@@ -236,8 +244,9 @@ class ErrorBag
     /**
      * Get formatted message
      *
-     * @param string $message
-     * @param string $format
+     * @param  string  $message
+     * @param  string  $format
+     *
      * @return string
      */
     protected function formatMessage(string $message, string $format): string

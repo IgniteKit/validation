@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Rule;
+use DG\Validation\Rule;
 
 class Regex extends Rule
 {
@@ -16,8 +16,10 @@ class Regex extends Rule
     /**
      * Check the $value is valid
      *
-     * @param mixed $value
+     * @param  mixed  $value
+     *
      * @return bool
+     * @throws \DG\Validation\MissingRequiredParameterException
      */
     public function check($value): bool
     {

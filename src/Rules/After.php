@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Rule;
+use DG\Validation\Rule;
 
 class After extends Rule
 {
@@ -19,8 +19,9 @@ class After extends Rule
      * Check the value is valid
      *
      * @param mixed $value
+     *
      * @return bool
-     * @throws Exception
+     * @throws \Exception
      */
     public function check($value): bool
     {

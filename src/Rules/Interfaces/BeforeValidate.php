@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation\Rules\Interfaces;
+namespace DG\Validation\Rules\Interfaces;
 
 interface BeforeValidate
 {

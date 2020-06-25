@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\Rule;
+use DG\Validation\Helper;
+use DG\Validation\Rule;
 
 class NotIn extends Rule
 {
@@ -43,8 +43,10 @@ class NotIn extends Rule
     /**
      * Check the $value is valid
      *
-     * @param mixed $value
+     * @param  mixed  $value
+     *
      * @return bool
+     * @throws \DG\Validation\MissingRequiredParameterException
      */
     public function check($value): bool
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace DG\Validation\Rules;
 
-use Rakit\Validation\Rule;
+use DG\Validation\Rule;
 
 class Ipv4 extends Rule
 {
