@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 class ExtensionTest extends TestCase
 {
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->rule = new Extension;
     }

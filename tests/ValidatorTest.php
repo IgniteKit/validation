@@ -3,6 +3,8 @@
 namespace DG\Validation\Tests;
 
 use DateTime;
+use DG\Validation\RuleNotFoundException;
+use DG\Validation\RuleQuashException;
 use PHPUnit\Framework\TestCase;
 use DG\Validation\Rule;
 use DG\Validation\Rules\UploadedFile;
@@ -13,7 +15,7 @@ class ValidatorTest extends TestCase
     /** @var Validator */
     protected $validator;
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->validator = new Validator;
     }
@@ -545,11 +547,10 @@ class ValidatorTest extends TestCase
         $this->assertTrue($v2->passes());
     }
 
-    /**
-     * @expectedException \DG\Validation\RuleNotFoundException
-     */
     public function testNonExistentValidationRule()
     {
+        $this->expectException(RuleNotFoundException::class);
+
         $validation = $this->validator->make([
             'name' => "some name"
         ], [
@@ -618,11 +619,11 @@ class ValidatorTest extends TestCase
         $this->assertTrue($validation->passes());
     }
 
-    /**
-     * @expectedException DG\Validation\RuleQuashException
-     */
+
     public function testInternalValidationRuleCannotBeOverridden()
     {
+
+        $this->expectException(RuleQuashException::class);
 
         $this->validator->addValidator('required', new Required());
 

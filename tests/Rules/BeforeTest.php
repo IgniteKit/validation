@@ -14,7 +14,7 @@ class BeforeTest extends TestCase
      */
     protected $validator;
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->validator = new Before();
     }
@@ -45,10 +45,10 @@ class BeforeTest extends TestCase
 
     /**
      * @dataProvider getInvalidDates
-     * @expectedException Exception
      */
     public function testANonWellFormedDateCannotBeValidated($date)
     {
+        $this->expectException(\Exception::class);
         $this->validator->fillParameters(["tomorrow"])->check($date);
     }
 
@@ -82,10 +82,10 @@ class BeforeTest extends TestCase
     }
 
     /**
-     * @expectedException Exception
      */
     public function testUserProvidedParamCannotBeValidatedBecauseItIsInvalid()
     {
+        $this->expectException(\Exception::class);
         $this->validator->fillParameters(["to,morrow"])->check("now");
     }
 }
