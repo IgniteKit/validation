@@ -1,8 +1,6 @@
 <?php
 
-
 namespace DG\Validation\Rules;
-
 
 use DG\Validation\Rule;
 
