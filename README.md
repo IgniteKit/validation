@@ -1,7 +1,7 @@
 WP Validation - PHP Standalone Validation Library
 ======================================================
 
-[![Build Status](https://img.shields.io/travis/gdarko/wp-validation.svg?style=flat-square)](https://travis-ci.org/rakit/validation)
+[![Build Status](https://img.shields.io/travis/ignitekit/wp-validation.svg?style=flat-square)](https://travis-ci.org/ignitekit/validation)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://doge.mit-license.org)
 
 
@@ -28,7 +28,7 @@ This is a fork of the original library written by [Rakit](https://github.com/rak
 #### Installation
 
 ```
-composer require gdarko/wp-validation
+composer require ignitekit/wp-validation
 ```
 
 #### Usage
