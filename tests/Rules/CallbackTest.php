@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Callback;
+use IgniteKit\Validation\Rules\Callback;
 use PHPUnit\Framework\TestCase;
 
 class CallbackTest extends TestCase

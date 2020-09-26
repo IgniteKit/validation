@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\AlphaNum;
+use IgniteKit\Validation\Rules\AlphaNum;
 use PHPUnit\Framework\TestCase;
 
 class AlphaNumTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\TypeArray;
+use IgniteKit\Validation\Rules\TypeArray;
 use PHPUnit\Framework\TestCase;
 
 class TypeArrayTest extends TestCase

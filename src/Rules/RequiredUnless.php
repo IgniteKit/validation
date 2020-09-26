@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Rule;
+use IgniteKit\Validation\Rule;
 
 class RequiredUnless extends Required
 {
@@ -31,8 +31,8 @@ class RequiredUnless extends Required
      * @param  mixed  $value
      *
      * @return bool
-     * @throws \DG\Validation\MissingRequiredParameterException
-     * @throws \DG\Validation\RuleNotFoundException
+     * @throws \IgniteKit\Validation\MissingRequiredParameterException
+     * @throws \IgniteKit\Validation\RuleNotFoundException
      */
     public function check($value): bool
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Digits;
+use IgniteKit\Validation\Rules\Digits;
 use PHPUnit\Framework\TestCase;
 
 class DigitsTest extends TestCase

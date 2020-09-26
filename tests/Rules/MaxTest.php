@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Max;
+use IgniteKit\Validation\Rules\Max;
 use PHPUnit\Framework\TestCase;
 
 class MaxTest extends TestCase

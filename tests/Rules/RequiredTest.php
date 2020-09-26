@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Required;
+use IgniteKit\Validation\Rules\Required;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 

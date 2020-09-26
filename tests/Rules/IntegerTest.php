@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Integer;
+use IgniteKit\Validation\Rules\Integer;
 use PHPUnit\Framework\TestCase;
 
 class IntegerTest extends TestCase

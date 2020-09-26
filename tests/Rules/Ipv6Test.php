@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Ipv6;
+use IgniteKit\Validation\Rules\Ipv6;
 use PHPUnit\Framework\TestCase;
 
 class Ipv6Test extends TestCase

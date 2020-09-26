@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Mimes;
+use IgniteKit\Validation\Rules\Mimes;
 use PHPUnit\Framework\TestCase;
 
 class MimesTest extends TestCase

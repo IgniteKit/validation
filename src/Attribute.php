@@ -1,6 +1,6 @@
 <?php
 
-namespace DG\Validation;
+namespace IgniteKit\Validation;
 
 class Attribute
 {
@@ -14,13 +14,13 @@ class Attribute
     /** @var string|null */
     protected $alias;
 
-    /** @var DG\Validation\Validation */
+    /** @var Validation */
     protected $validation;
 
     /** @var bool */
     protected $required = false;
 
-    /** @var DG\Validation\Validation|null */
+    /** @var Attribute|null */
     protected $primaryAttribute = null;
 
     /** @var array */
@@ -32,11 +32,10 @@ class Attribute
     /**
      * Constructor
      *
-     * @param DG\Validation\Validation  $validation
-     * @param string      $key
+     * @param Validation $validation
+     * @param string $key
      * @param string|null $alias
-     * @param array       $rules
-     * @return void
+     * @param array $rules
      */
     public function __construct(
         Validation $validation,
@@ -55,7 +54,8 @@ class Attribute
     /**
      * Set the primary attribute
      *
-     * @param DG\Validation\Attribute $primaryAttribute
+     * @param Attribute $primaryAttribute
+     *
      * @return void
      */
     public function setPrimaryAttribute(Attribute $primaryAttribute)
@@ -77,7 +77,7 @@ class Attribute
     /**
      * Get primary attributes
      *
-     * @return DG\Validation\Attribute|null
+     * @return Attribute
      */
     public function getPrimaryAttribute()
     {
@@ -101,7 +101,8 @@ class Attribute
     /**
      * Add other attributes
      *
-     * @param DG\Validation\Attribute $otherAttribute
+     * @param Attribute $otherAttribute
+     *
      * @return void
      */
     public function addOtherAttribute(Attribute $otherAttribute)
@@ -122,7 +123,8 @@ class Attribute
     /**
      * Add rule
      *
-     * @param DG\Validation\Rule $rule
+     * @param Rule $rule
+     *
      * @return void
      */
     public function addRule(Rule $rule)

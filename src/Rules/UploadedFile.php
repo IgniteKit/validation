@@ -1,11 +1,11 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Helper;
-use DG\Validation\MimeTypeGuesser;
-use DG\Validation\Rule;
-use DG\Validation\Rules\Interfaces\BeforeValidate;
+use IgniteKit\Validation\Helper;
+use IgniteKit\Validation\MimeTypeGuesser;
+use IgniteKit\Validation\Rule;
+use IgniteKit\Validation\Rules\Interfaces\BeforeValidate;
 
 class UploadedFile extends Rule implements BeforeValidate
 {

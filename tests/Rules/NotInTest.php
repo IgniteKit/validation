@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\NotIn;
+use IgniteKit\Validation\Rules\NotIn;
 use PHPUnit\Framework\TestCase;
 
 class NotInTest extends TestCase

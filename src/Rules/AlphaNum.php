@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Rule;
+use IgniteKit\Validation\Rule;
 
 class AlphaNum extends Rule
 {

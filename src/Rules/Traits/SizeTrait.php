@@ -1,6 +1,6 @@
 <?php
 
-namespace DG\Validation\Rules\Traits;
+namespace IgniteKit\Validation\Rules\Traits;
 
 use InvalidArgumentException;
 

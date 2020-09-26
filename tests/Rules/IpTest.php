@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Ip;
+use IgniteKit\Validation\Rules\Ip;
 use PHPUnit\Framework\TestCase;
 
 class IpTest extends TestCase

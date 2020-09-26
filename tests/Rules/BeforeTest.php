@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Before;
+use IgniteKit\Validation\Rules\Before;
 use PHPUnit\Framework\TestCase;
 use DateTime;
 
@@ -10,7 +10,7 @@ class BeforeTest extends TestCase
 {
 
     /**
-     * @var \DG\Validation\Rules\Before
+     * @var \IgniteKit\ValidationRules\Before
      */
     protected $validator;
 

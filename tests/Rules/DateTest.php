@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Date;
+use IgniteKit\Validation\Rules\Date;
 use PHPUnit\Framework\TestCase;
 
 class DateTest extends TestCase

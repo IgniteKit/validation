@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Rule;
+use IgniteKit\Validation\Rule;
 
 class Max extends Rule
 {
@@ -20,7 +20,7 @@ class Max extends Rule
      * @param  mixed  $value
      *
      * @return bool
-     * @throws \DG\Validation\MissingRequiredParameterException
+     * @throws \IgniteKit\Validation\MissingRequiredParameterException
      */
     public function check($value): bool
     {

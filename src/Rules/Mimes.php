@@ -1,10 +1,10 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Helper;
-use DG\Validation\MimeTypeGuesser;
-use DG\Validation\Rule;
+use IgniteKit\Validation\Helper;
+use IgniteKit\Validation\MimeTypeGuesser;
+use IgniteKit\Validation\Rule;
 
 class Mimes extends Rule
 {

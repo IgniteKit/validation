@@ -1,9 +1,9 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Helper;
-use DG\Validation\Rule;
+use IgniteKit\Validation\Helper;
+use IgniteKit\Validation\Rule;
 
 class NotIn extends Rule
 {
@@ -46,7 +46,7 @@ class NotIn extends Rule
      * @param  mixed  $value
      *
      * @return bool
-     * @throws \DG\Validation\MissingRequiredParameterException
+     * @throws \IgniteKit\Validation\MissingRequiredParameterException
      */
     public function check($value): bool
     {

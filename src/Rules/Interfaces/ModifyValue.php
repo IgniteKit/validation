@@ -1,6 +1,6 @@
 <?php
 
-namespace DG\Validation\Rules\Interfaces;
+namespace IgniteKit\Validation\Rules\Interfaces;
 
 interface ModifyValue
 {

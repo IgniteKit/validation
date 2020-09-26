@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Defaults;
+use IgniteKit\Validation\Rules\Defaults;
 use PHPUnit\Framework\TestCase;
 
 class DefaultsTest extends TestCase

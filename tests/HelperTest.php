@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Helper;
+use IgniteKit\Validation\Helper;
 use PHPUnit\Framework\TestCase;
 
 class HelperTest extends TestCase

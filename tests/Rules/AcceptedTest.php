@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Accepted;
+use IgniteKit\Validation\Rules\Accepted;
 use PHPUnit\Framework\TestCase;
 
 class AcceptedTest extends TestCase

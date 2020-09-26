@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Regex;
+use IgniteKit\Validation\Rules\Regex;
 use PHPUnit\Framework\TestCase;
 
 class RegexTest extends TestCase

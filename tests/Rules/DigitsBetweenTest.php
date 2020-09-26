@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\DigitsBetween;
+use IgniteKit\Validation\Rules\DigitsBetween;
 use PHPUnit\Framework\TestCase;
 
 class DigitsBetweenTest extends TestCase

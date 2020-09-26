@@ -1,9 +1,9 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Validation;
-use DG\Validation\Validator;
+use IgniteKit\Validation\Validation;
+use IgniteKit\Validation\Validator;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 

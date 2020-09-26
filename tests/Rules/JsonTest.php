@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Json;
+use IgniteKit\Validation\Rules\Json;
 use PHPUnit\Framework\TestCase;
 
 class JsonTest extends TestCase

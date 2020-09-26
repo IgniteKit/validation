@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Lowercase;
+use IgniteKit\Validation\Rules\Lowercase;
 use PHPUnit\Framework\TestCase;
 
 class LowercaseTest extends TestCase

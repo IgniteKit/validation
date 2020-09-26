@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Between;
+use IgniteKit\Validation\Rules\Between;
 use PHPUnit\Framework\TestCase;
 
 class BetweenTest extends TestCase

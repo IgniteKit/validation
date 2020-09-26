@@ -1,9 +1,9 @@
 <?php
 
-namespace DG\Validation\Rules;
+namespace IgniteKit\Validation\Rules;
 
-use DG\Validation\Helper;
-use DG\Validation\Rule;
+use IgniteKit\Validation\Helper;
+use IgniteKit\Validation\Rule;
 
 class In extends Rule
 {

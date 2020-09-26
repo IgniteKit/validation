@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\UploadedFile;
+use IgniteKit\Validation\Rules\UploadedFile;
 use PHPUnit\Framework\TestCase;
 
 class UploadedFileTest extends TestCase

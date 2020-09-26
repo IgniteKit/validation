@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\AlphaDash;
+use IgniteKit\Validation\Rules\AlphaDash;
 use PHPUnit\Framework\TestCase;
 
 class AlphaDashTest extends TestCase

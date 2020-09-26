@@ -1,6 +1,6 @@
 <?php
 
-namespace DG\Validation\Traits;
+namespace IgniteKit\Validation\Traits;
 
 trait MessagesTrait
 {

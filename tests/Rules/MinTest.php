@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Min;
+use IgniteKit\Validation\Rules\Min;
 use PHPUnit\Framework\TestCase;
 
 class MinTest extends TestCase

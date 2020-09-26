@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Ipv4;
+use IgniteKit\Validation\Rules\Ipv4;
 use PHPUnit\Framework\TestCase;
 
 class Ipv4Test extends TestCase

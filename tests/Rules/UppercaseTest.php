@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Uppercase;
+use IgniteKit\Validation\Rules\Uppercase;
 use PHPUnit\Framework\TestCase;
 
 class UppercaseTest extends TestCase

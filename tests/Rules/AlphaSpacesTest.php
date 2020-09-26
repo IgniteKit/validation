@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\AlphaSpaces;
+use IgniteKit\Validation\Rules\AlphaSpaces;
 use PHPUnit\Framework\TestCase;
 
 class AlphaSpacesTest extends TestCase

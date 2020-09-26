@@ -1,11 +1,11 @@
 <?php
 
-namespace DG\Validation;
+namespace IgniteKit\Validation;
 
 use Closure;
-use DG\Validation\Rules\Interfaces\BeforeValidate;
-use DG\Validation\Rules\Interfaces\ModifyValue;
-use DG\Validation\Rules\Required;
+use IgniteKit\Validation\Rules\Interfaces\BeforeValidate;
+use IgniteKit\Validation\Rules\Interfaces\ModifyValue;
+use IgniteKit\Validation\Rules\Required;
 
 class Validation
 {
@@ -63,7 +63,9 @@ class Validation
      *
      * @param string $attributeKey
      * @param string|array $rules
+     *
      * @return void
+     * @throws \Exception
      */
     public function addAttribute(string $attributeKey, $rules)
     {
@@ -76,7 +78,7 @@ class Validation
      * Get attribute by key
      *
      * @param string $attributeKey
-     * @return null|DG\Validation\Attribute
+     * @return null|Attribute
      */
     public function getAttribute(string $attributeKey)
     {
@@ -478,7 +480,9 @@ class Validation
      * Resolve $rules
      *
      * @param mixed $rules
+     *
      * @return array
+     * @throws \Exception
      */
     protected function resolveRules($rules): array
     {
@@ -715,7 +719,7 @@ class Validation
     /**
      * Get invalid data
      *
-     * @return void
+     * @return array
      */
     public function getInvalidData(): array
     {

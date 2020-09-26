@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\ErrorBag;
+use IgniteKit\Validation\ErrorBag;
 use PHPUnit\Framework\TestCase;
 
 class ErrorBagTest extends TestCase

@@ -1,9 +1,9 @@
 <?php
 
-namespace DG\Validation\Rules\Traits;
+namespace IgniteKit\Validation\Rules\Traits;
 
 use InvalidArgumentException;
-use DG\Validation\Helper;
+use IgniteKit\Validation\Helper;
 
 trait FileTrait
 {

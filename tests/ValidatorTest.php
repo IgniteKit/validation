@@ -1,14 +1,14 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
 use DateTime;
-use DG\Validation\RuleNotFoundException;
-use DG\Validation\RuleQuashException;
+use IgniteKit\Validation\RuleNotFoundException;
+use IgniteKit\Validation\RuleQuashException;
 use PHPUnit\Framework\TestCase;
-use DG\Validation\Rule;
-use DG\Validation\Rules\UploadedFile;
-use DG\Validation\Validator;
+use IgniteKit\Validation\Rule;
+use IgniteKit\Validation\Rules\UploadedFile;
+use IgniteKit\Validation\Validator;
 
 class ValidatorTest extends TestCase
 {

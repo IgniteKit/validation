@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Email;
+use IgniteKit\Validation\Rules\Email;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase

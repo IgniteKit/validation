@@ -1,6 +1,6 @@
 <?php
 
-namespace DG\Validation;
+namespace IgniteKit\Validation;
 
 class Validator
 {

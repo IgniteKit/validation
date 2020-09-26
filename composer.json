@@ -1,6 +1,6 @@
 {
-  "name": "gdarko/wp-validation",
-  "description": "PHP Laravel like standalone validation library",
+  "name": "IgniteKit/validation",
+  "description": "Laravel inspired validation package for PHP",
   "license": "MIT",
   "authors": [
     {
@@ -10,12 +10,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "DG\\Validation\\": "src"
+      "IgniteKit\\Validation\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "DG\\Validation\\Tests\\": ["tests", "tests/Fixtures"]
+      "IgniteKit\\Validation\\Tests\\": ["tests", "tests/Fixtures"]
     }
   },
   "require": {

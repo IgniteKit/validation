@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rule;
+use IgniteKit\Validation\Rule;
 
 class Required extends Rule
 {

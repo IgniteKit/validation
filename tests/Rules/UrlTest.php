@@ -1,8 +1,8 @@
 <?php
 
-namespace DG\Validation\Tests;
+namespace IgniteKit\Validation\Tests;
 
-use DG\Validation\Rules\Url;
+use IgniteKit\Validation\Rules\Url;
 use PHPUnit\Framework\TestCase;
 
 class UrlTest extends TestCase
