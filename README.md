@@ -1,4 +1,4 @@
-WP Validation - PHP Standalone Validation Library
+Validation - PHP Standalone Validation Library
 ======================================================
 
 [![Build Status](https://img.shields.io/travis/ignitekit/wp-validation.svg?style=flat-square)](https://travis-ci.org/ignitekit/validation)
@@ -28,7 +28,7 @@ This is a fork of the original library written by [Rakit](https://github.com/rak
 #### Installation
 
 ```
-composer require ignitekit/wp-validation
+composer require ignitekit/validation
 ```
 
 #### Usage
