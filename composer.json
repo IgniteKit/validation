@@ -16,8 +16,7 @@
   "autoload-dev": {
     "psr-4": {
       "IgniteKit\\Validation\\Tests\\": [
-        "tests",
-        "tests/Fixtures"
+        "tests"
       ]
     }
   },
