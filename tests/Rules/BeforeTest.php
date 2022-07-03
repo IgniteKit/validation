@@ -1,6 +1,6 @@
 <?php
 
-namespace IgniteKit\Validation\Tests;
+namespace IgniteKit\Validation\Tests\Rules;
 
 use IgniteKit\Validation\Rules\Before;
 use PHPUnit\Framework\TestCase;

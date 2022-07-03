@@ -1,6 +1,6 @@
 <?php
 
-namespace IgniteKit\Validation\Tests;
+namespace IgniteKit\Validation\Tests\Fixtures;
 
 use IgniteKit\Validation\Rule;
 

@@ -5,10 +5,12 @@ namespace IgniteKit\Validation\Tests;
 use DateTime;
 use IgniteKit\Validation\RuleNotFoundException;
 use IgniteKit\Validation\RuleQuashException;
-use PHPUnit\Framework\TestCase;
-use IgniteKit\Validation\Rule;
-use IgniteKit\Validation\Rules\UploadedFile;
+use IgniteKit\Validation\Tests\Fixtures\Required;
 use IgniteKit\Validation\Validator;
+use IgniteKit\Validation\Rules\UploadedFile;
+use IgniteKit\Validation\Tests\Fixtures\Even;
+
+use PHPUnit\Framework\TestCase;
 
 class ValidatorTest extends TestCase
 {
@@ -1298,7 +1300,7 @@ class ValidatorTest extends TestCase
         ], $validData);
 
         $stuffs = $validData['stuffs'];
-        $this->assertFalse(isset($stuffs['three']));
+        $this->assertArrayNotHasKey('three', $stuffs);
     }
 
     public function testGetInvalidData()
@@ -1351,8 +1353,8 @@ class ValidatorTest extends TestCase
         ], $invalidData);
 
         $stuffs = $invalidData['stuffs'];
-        $this->assertFalse(isset($stuffs['one']));
-        $this->assertFalse(isset($stuffs['two']));
+        $this->assertArrayNotHasKey('one', $stuffs);
+        $this->assertArrayNotHasKey('two', $stuffs);
     }
 
     public function testRuleInInvalidMessages()
