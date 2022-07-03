@@ -615,6 +615,12 @@ $validation = $validator->validate([
 ]);
 
 $validation->passes(); // true
+
+// Get the valid/default data
+$valid_data = $validation->getValidData();
+$enabled = $valid_data['enabled'];
+$published = $valid_data['published'];
+
 ```
 
 Validation passes because we sets default value for `enabled` and `published` to `1` and `0` which is valid.
@@ -709,7 +715,7 @@ This rule also using `in_array`. You can enable strict checking by invoking vali
 
 The field under this rule must have a size greater or equal than the given number. 
 
-For string data, value corresponds to the number of characters. For numeric data, value corresponds to a given integer value. For an array, size corresponds to the count of the array.
+For string value, size corresponds to the number of characters. For integer or float value, size corresponds to its numerical value. For an array, size corresponds to the count of the array. If your value is numeric string, you can put `numeric` rule to treat its size by numeric value instead of number of characters.
 
 You can also validate uploaded file using this rule to validate minimum size of uploaded file.
 For example:
@@ -799,6 +805,12 @@ $validation = $validator->validate($inputs, [
 
 <details><summary><strong>integer</strong></summary>
 The field under t rule must be integer.
+
+</details>
+
+<details><summary><strong>boolean</strong></summary>
+
+The field under this rule must be boolean. Accepted input are `true`, `false`, `1`, `0`, `"1"`, and `"0"`.
 
 </details>
 
