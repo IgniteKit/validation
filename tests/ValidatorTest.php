@@ -882,6 +882,29 @@ class ValidatorTest extends TestCase
         ];
     }
 
+    public function testRequiredBoolean()
+    {
+        $validation = $this->validator->validate([
+            'param1' => true,
+            'param2' => false,
+            'param3' => 1,
+            'param4' => 0,
+            'param5' => "1",
+            'param6' => "0",
+        ], [
+            'param1' => 'required|boolean',
+            'param2' => 'required|boolean',
+            'param3' => 'required|boolean',
+            'param4' => 'required|boolean',
+            'param5' => 'required|boolean',
+            'param6' => 'required|boolean',
+        ]);
+
+        $errors = $validation->errors();
+
+        $this->assertEquals($errors->count(), 0);
+    }
+
     public function testArrayValidation()
     {
         $validation = $this->validator->validate([
