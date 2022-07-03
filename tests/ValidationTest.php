@@ -7,7 +7,7 @@ use IgniteKit\Validation\Validator;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 
-class ValidatonTest extends TestCase
+class ValidationTest extends TestCase
 {
     /**
      * @param string $rules
