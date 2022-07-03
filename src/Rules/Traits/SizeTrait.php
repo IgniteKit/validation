@@ -15,14 +15,18 @@ trait SizeTrait
      */
     protected function getValueSize($value)
     {
-        if (is_int($value) || is_numeric($value)) {
+        if ( $this->getAttribute() && ( $this->getAttribute()->hasRule( 'numeric' ) || $this->getAttribute()->hasRule( 'integer' ) ) && is_numeric( $value ) ) {
+            $value = (float) $value;
+        }
+
+        if ( is_int( $value ) || is_float( $value ) ) {
             return (float) $value;
-        } elseif (is_string($value)) {
-            return (float) mb_strlen($value, 'UTF-8');
-        } elseif ($this->isUploadedFileValue($value)) {
+        } elseif ( is_string( $value ) ) {
+            return (float) mb_strlen( $value, 'UTF-8' );
+        } elseif ( $this->isUploadedFileValue( $value ) ) {
             return (float) $value['size'];
-        } elseif (is_array($value)) {
-            return (float) count($value);
+        } elseif ( is_array( $value ) ) {
+            return (float) count( $value );
         } else {
             return false;
         }
